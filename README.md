@@ -46,7 +46,7 @@ https://aka.ms/vc14/vc_redist.x64.exe
 
 ## 使い方（ハード・ソフト完了後）
 
-こちらの[FacialRecognitionSystem.zip](https://drive.google.com/file/d/1jKI5qWl4ep5TFUKK-yF3NzyXsTRV0T6f/view?usp=sharing)をダウンロード・任意のフォルダに解凍  
+こちらの[FacialRecognitionSystem.zip](https://drive.google.com/drive/folders/1mpYEN5OyQwayhC4miiuyuByi2ybnxKgo?usp=sharing)の最新版をダウンロード・任意のフォルダに解凍  
 FacialRecognitionSystem.exe を実行
 
 システム起動後

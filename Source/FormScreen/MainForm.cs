@@ -112,7 +112,7 @@ public partial class MainForm : Form
                 facialRecognitionExecute(videoCaptureID, pictureBox, lblPlayerId, lblPlayerName, playerFileName, lblLastPlayerID, ref lastDateTime2);
             }
 
-            //全参加プレーヤのファイルを作成
+            //全参加プレイヤーのファイルを作成
             if (!string.IsNullOrEmpty(_config.JoinPlayerFileFullPath))
             {
 

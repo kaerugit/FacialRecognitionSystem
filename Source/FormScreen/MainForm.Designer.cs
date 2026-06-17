@@ -490,7 +490,7 @@
             label10.Name = "label10";
             label10.Size = new Size(203, 23);
             label10.TabIndex = 26;
-            label10.Text = "参加プレーヤの一覧ファイルを作成";
+            label10.Text = "参加プレイヤーの一覧ファイルを作成";
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtNewPlayerName
@@ -551,7 +551,7 @@
             label4.Name = "label4";
             label4.Size = new Size(203, 23);
             label4.TabIndex = 19;
-            label4.Text = "プレーヤを確認する間隔(秒)";
+            label4.Text = "プレイヤーを確認する間隔(秒)";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnAdvanced
@@ -577,7 +577,7 @@
             Controls.Add(pnlAdvanced);
             Controls.Add(panel1);
             Name = "MainForm";
-            Text = "自動顔認証プレーヤ名表示";
+            Text = "自動顔認証プレイヤー名表示";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

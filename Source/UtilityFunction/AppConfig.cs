@@ -116,7 +116,7 @@ public class AppConfig : INotifyPropertyChanged
     private string _joinPlayerFileFullPath = "";
 
     /// <summary>
-    /// 参加プレーヤのファイルを作成
+    /// 参加プレイヤーのファイルを作成
     /// </summary>
     public string JoinPlayerFileFullPath
     {
@@ -128,7 +128,7 @@ public class AppConfig : INotifyPropertyChanged
     private string _joinPlayerSplit = "";
 
     /// <summary>
-    /// 参加プレーヤの区切り文字(空欄の場合は改行)
+    /// 参加プレイヤーの区切り文字(空欄の場合は改行)
     /// </summary>
     public string JoinPlayerSplitChar
     {
