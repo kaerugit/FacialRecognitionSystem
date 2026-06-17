@@ -47,7 +47,7 @@ public static class FacialRecognition
     /// <param name="config">設定ファイル</param>
     /// <param name="videoCaptureID">カメラID</param>
     /// <param name="frame">画面に表示する画像</param>
-    /// <returns>該当するプレーヤーデータ/類似最大Score/newの場合true</returns>
+    /// <returns>該当するプレイヤーデータ/類似最大Score/newの場合true</returns>
     public static (PlayerData? playerData, double maxScore,  bool newFlag) Execute(AppConfig config, int videoCaptureID, ref Mat frame)
     {
         //デフォルトの戻り値

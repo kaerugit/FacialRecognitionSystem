@@ -9,7 +9,7 @@ using OpenCvSharp;
 namespace FacialRecognitionSystem.UtilityFunction;
 
 /// <summary>
-/// プレーヤーのデータ
+/// プレイヤーのデータ
 /// </summary>
 public class PlayerData
 {
