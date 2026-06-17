@@ -65,7 +65,7 @@
             label3.Name = "label3";
             label3.Size = new Size(100, 23);
             label3.TabIndex = 21;
-            label3.Text = "プレーヤー名で検索";
+            label3.Text = "プレイヤー名で検索";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // grdPlayerList

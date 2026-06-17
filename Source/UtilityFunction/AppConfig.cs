@@ -104,7 +104,7 @@ public class AppConfig : INotifyPropertyChanged
     private string _newPlayerName = "new challenger";
 
     /// <summary>
-    /// 新規時のプレーヤー名
+    /// 新規時のプレイヤー名
     /// </summary>
     public string NewPlayerName
     {

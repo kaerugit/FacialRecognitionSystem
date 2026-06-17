@@ -217,7 +217,7 @@ public static class FacialRecognition
                     // 顔の範囲から数値化 (Embedding 生成　FaceEmbeddingModel.cs)
                     float[] embedding = onnxModel.GetEmbedding(faceImg);
 
-                    // 該当するプレーヤーを検索
+                    // 該当するプレイヤーを検索
                     var (player, maxScore) = logic.FindPlayer(embedding,(double)config.JudgementScore);
 
                     var newFlag = false;
@@ -339,7 +339,7 @@ public static class FacialRecognition
     //        // Embedding 生成　FaceEmbeddingModel.cs
     //        float[] embedding = onnxModel.GetEmbedding(faceImg);
 
-    //        // 該当するプレーヤーを検索
+    //        // 該当するプレイヤーを検索
     //        var (player, maxScore) = logic.FindPlayer(embedding);
 
     //        var newFlag = false;

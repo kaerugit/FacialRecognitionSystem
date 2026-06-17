@@ -8,7 +8,7 @@ using System.Text.Json;
 
 public static class PlayerDataStorage
 {
-    //プレーヤー名管理ファイル
+    //プレイヤー名管理ファイル
     static private readonly string FILE_PLAYER_PATH = "PlayerData.json";
     //顔情報管理ファイル
     static private readonly string FILE_EMBEDDING_PATH = "PlayerEmbeddingData.json";
@@ -16,7 +16,7 @@ public static class PlayerDataStorage
     static private object _lock = new object();
 
     /// <summary>
-    /// プレーヤーのデータ
+    /// プレイヤーのデータ
     /// </summary>
     static public PlayerDataList PlayerDataDB { get; private set; } = new PlayerDataList();
 

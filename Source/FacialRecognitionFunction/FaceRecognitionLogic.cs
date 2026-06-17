@@ -57,7 +57,7 @@ public class FaceRecognitionLogic
 
         var namePlayerList = PlayerDataStorage.PlayerDataDB.Where(w => string.IsNullOrEmpty(w.PlayerName)).Select(s => s.PlayerId).ToList();
 
-        //名前の入っているプレーヤーを優先
+        //名前の入っているプレイヤーを優先
         foreach (var player in db.Where(w => namePlayerList.Contains(w.PlayerId)))
         {
             var score = CosineSimilarity(embedding, player.Embedding);
@@ -122,7 +122,7 @@ public class FaceRecognitionLogic
 
         }
 
-        //プレーヤーデータ
+        //プレイヤーデータ
         if (true)
         {
             var db = PlayerDataStorage.PlayerDataDB;

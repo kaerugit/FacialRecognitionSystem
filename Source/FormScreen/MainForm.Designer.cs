@@ -197,7 +197,7 @@
             label3.Name = "label3";
             label3.Size = new Size(135, 23);
             label3.TabIndex = 20;
-            label3.Text = "プレーヤー名";
+            label3.Text = "プレイヤー名";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -423,7 +423,7 @@
             label12.Name = "label12";
             label12.Size = new Size(203, 23);
             label12.TabIndex = 33;
-            label12.Text = "同一プレーヤー判定割合(最大1)";
+            label12.Text = "同一プレイヤー判定割合(最大1)";
             label12.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // chkDevelopMode
