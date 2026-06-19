@@ -140,6 +140,10 @@ public partial class MainForm : Form
             }
         });
 
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+        GC.Collect();
+
         timer.Enabled = true;
     }
 
@@ -191,7 +195,7 @@ public partial class MainForm : Form
     private void txtTimerInterval_TextChanged(object sender, EventArgs e)
     {
         int value;
-        if (!int.TryParse(this.txtTimerInterval.Text, out value))
+        if (!int.TryParse(this.txtTimerInterval.Text, out value)　|| value<=0)
         {
             value = 10;
         }
@@ -279,54 +283,53 @@ public partial class MainForm : Form
 
         //カメラ1台目
         this.cboVideoCapture1.DataBindings.Add("SelectedValue", _config, nameof(AppConfig.VideoCaptureID1),
-                            false, DataSourceUpdateMode.OnPropertyChanged);
+             false, DataSourceUpdateMode.OnPropertyChanged);
 
 
         this.txtFileSavePath1.DataBindings.Add("Text", _config, nameof(AppConfig.FileSaveFullPath1),
-                             false, DataSourceUpdateMode.OnPropertyChanged);
+             false, DataSourceUpdateMode.OnPropertyChanged);
 
         //カメラ2台目
         this.txtFileSavePath2.DataBindings.Add("Text", _config, nameof(AppConfig.FileSaveFullPath2),
-                             false, DataSourceUpdateMode.OnPropertyChanged);
+             false, DataSourceUpdateMode.OnPropertyChanged);
 
         this.cboVideoCapture2.DataBindings.Add("SelectedValue", _config, nameof(AppConfig.VideoCaptureID2),
-                            false, DataSourceUpdateMode.OnPropertyChanged);
+             false, DataSourceUpdateMode.OnPropertyChanged);
 
 
         //高度な設定
         this.txtTimerInterval.DataBindings.Add("Text", _config, nameof(AppConfig.TimerInterval),
-                             false, DataSourceUpdateMode.OnPropertyChanged);
+             true, DataSourceUpdateMode.OnPropertyChanged, null, "0");  //入力終わってからバインド
 
         this.txtFaceScore.DataBindings.Add("Text", _config, nameof(AppConfig.FaceScore),
-            true, DataSourceUpdateMode.OnPropertyChanged, null, "0.0");  //入力終わってからバインド
+             true, DataSourceUpdateMode.OnPropertyChanged, null, "0.00");  //入力終わってからバインド
 
 
         this.txtJudgementScore.DataBindings.Add("Text", _config, nameof(AppConfig.JudgementScore),
-             true, DataSourceUpdateMode.OnPropertyChanged, null, "0.0");  //入力終わってからバインド
+             true, DataSourceUpdateMode.OnPropertyChanged, null, "0.00");  //入力終わってからバインド
 
         this.txtExclusionRate.DataBindings.Add("Text", _config, nameof(AppConfig.ExclusionRate),
-                     true, DataSourceUpdateMode.OnPropertyChanged, null, "0.0");    //入力終わってからバインド
+             true, DataSourceUpdateMode.OnPropertyChanged, null, "0.00");    //入力終わってからバインド
 
         this.txtNewPlayerName.DataBindings.Add("Text", _config, nameof(AppConfig.NewPlayerName),
              false, DataSourceUpdateMode.OnPropertyChanged);
 
 
         this.txtJoinPlayerFileFullPath.DataBindings.Add("Text", _config, nameof(AppConfig.JoinPlayerFileFullPath),
-                false, DataSourceUpdateMode.OnPropertyChanged);
+             false, DataSourceUpdateMode.OnPropertyChanged);
 
 
         this.txtJoinPlayerSplitChar.DataBindings.Add("Text", _config, nameof(AppConfig.JoinPlayerSplitChar),
-            false, DataSourceUpdateMode.OnPropertyChanged);
+             false, DataSourceUpdateMode.OnPropertyChanged);
 
         this.txtFrameWidth.DataBindings.Add("Text", _config, nameof(AppConfig.FrameWidth),
-                     false, DataSourceUpdateMode.OnPropertyChanged);
+             true, DataSourceUpdateMode.OnPropertyChanged, null, "0");  //入力終わってからバインド
 
         this.txtFrameHeight.DataBindings.Add("Text", _config, nameof(AppConfig.FrameHeight),
-                             false, DataSourceUpdateMode.OnPropertyChanged);
-
+             true, DataSourceUpdateMode.OnPropertyChanged, null, "0");  //入力終わってからバインド
 
         this.chkDevelopMode.DataBindings.Add("Checked", _config, nameof(AppConfig.DevelopMode),
-            false, DataSourceUpdateMode.OnPropertyChanged);
+             false, DataSourceUpdateMode.OnPropertyChanged);
     }
 
     private void openSaveFileDialog(System.Windows.Forms.TextBox txtfileSavePath, string defaultFileName)
@@ -371,19 +374,10 @@ public partial class MainForm : Form
         ref DateTime lastDateTime)
     {
         Mat frame = new();
-
-        ////frame = Cv2.ImRead("Test\\jpg\\test04.jpg");
-        //if (playerFileName.Contains("2"))
-        //{
-        //    frame = Cv2.ImRead("");
-        //}
-        //else
-        //{
-        //    frame = Cv2.ImRead("");
-        //}
+        //using var frame = new Mat();
 
         //顔認証データ登録・判定
-        var (p, maxScore, _) = FacialRecognition.Execute(_config, videoCaptureID, ref frame);
+        var (p, maxScore, _) = FacialRecognition.Execute(_config, videoCaptureID,ref frame);
 
         var displayPlayerId = "";
         var displayPlayerName = "";
@@ -402,7 +396,11 @@ public partial class MainForm : Form
             var jpgFileName = Path.Combine(Utility.GetTempFolder(), p.PlayerId + ".jpg") ?? "";
             if (Path.Exists(jpgFileName) == false)
             {
-                Cv2.ImWrite(jpgFileName, frame);
+                try
+                {
+                    Cv2.ImWrite(jpgFileName, frame);
+                }
+                catch { }
             }
 
             lblLastPlayerID.Text = displayPlayerId;

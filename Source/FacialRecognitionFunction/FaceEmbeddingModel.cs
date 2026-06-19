@@ -20,7 +20,7 @@ public class FaceEmbeddingModel
     public float[] GetEmbedding(Mat face)
     {
         // 1. Resize（112×112）
-        Mat resized = face.Resize(new Size(112, 112));
+        using var resized = face.Resize(new Size(112, 112));
 
         // 2. BGR → RGB
         Cv2.CvtColor(resized, resized, ColorConversionCodes.BGR2RGB);

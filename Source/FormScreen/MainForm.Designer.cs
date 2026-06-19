@@ -107,7 +107,7 @@
             panel1.Location = new Point(8, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(631, 267);
-            panel1.TabIndex = 10;
+            panel1.TabIndex = 0;
             // 
             // lblLastPlayerID2
             // 
@@ -115,7 +115,7 @@
             lblLastPlayerID2.Location = new Point(13, 126);
             lblLastPlayerID2.Name = "lblLastPlayerID2";
             lblLastPlayerID2.Size = new Size(135, 23);
-            lblLastPlayerID2.TabIndex = 28;
+            lblLastPlayerID2.TabIndex = 3;
             lblLastPlayerID2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblLastPlayerID1
@@ -124,7 +124,7 @@
             lblLastPlayerID1.Location = new Point(13, 89);
             lblLastPlayerID1.Name = "lblLastPlayerID1";
             lblLastPlayerID1.Size = new Size(135, 23);
-            lblLastPlayerID1.TabIndex = 27;
+            lblLastPlayerID1.TabIndex = 2;
             lblLastPlayerID1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblPlayerID2
@@ -133,7 +133,7 @@
             lblPlayerID2.Location = new Point(13, 50);
             lblPlayerID2.Name = "lblPlayerID2";
             lblPlayerID2.Size = new Size(135, 23);
-            lblPlayerID2.TabIndex = 26;
+            lblPlayerID2.TabIndex = 1;
             lblPlayerID2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblPlayerID1
@@ -142,7 +142,7 @@
             lblPlayerID1.Location = new Point(13, 13);
             lblPlayerID1.Name = "lblPlayerID1";
             lblPlayerID1.Size = new Size(135, 23);
-            lblPlayerID1.TabIndex = 25;
+            lblPlayerID1.TabIndex = 0;
             lblPlayerID1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnPlayerSave2
@@ -154,7 +154,7 @@
             btnPlayerSave2.Location = new Point(538, 170);
             btnPlayerSave2.Name = "btnPlayerSave2";
             btnPlayerSave2.Size = new Size(49, 24);
-            btnPlayerSave2.TabIndex = 24;
+            btnPlayerSave2.TabIndex = 8;
             btnPlayerSave2.Text = "登録";
             btnPlayerSave2.UseVisualStyleBackColor = false;
             btnPlayerSave2.Click += btnPlayerSave2_Click;
@@ -165,7 +165,7 @@
             lblPlayerName2.Location = new Point(401, 171);
             lblPlayerName2.Name = "lblPlayerName2";
             lblPlayerName2.Size = new Size(135, 23);
-            lblPlayerName2.TabIndex = 23;
+            lblPlayerName2.TabIndex = 7;
             lblPlayerName2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnPlayerSave1
@@ -177,7 +177,7 @@
             btnPlayerSave1.Location = new Point(291, 170);
             btnPlayerSave1.Name = "btnPlayerSave1";
             btnPlayerSave1.Size = new Size(49, 24);
-            btnPlayerSave1.TabIndex = 22;
+            btnPlayerSave1.TabIndex = 6;
             btnPlayerSave1.Text = "登録";
             btnPlayerSave1.UseVisualStyleBackColor = false;
             btnPlayerSave1.Click += btnPlayerSave1_Click;
@@ -188,7 +188,7 @@
             lblPlayerName1.Location = new Point(154, 171);
             lblPlayerName1.Name = "lblPlayerName1";
             lblPlayerName1.Size = new Size(135, 23);
-            lblPlayerName1.TabIndex = 21;
+            lblPlayerName1.TabIndex = 5;
             lblPlayerName1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -196,7 +196,7 @@
             label3.Location = new Point(4, 171);
             label3.Name = "label3";
             label3.Size = new Size(135, 23);
-            label3.TabIndex = 20;
+            label3.TabIndex = 4;
             label3.Text = "プレイヤー名";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -205,7 +205,7 @@
             label2.Location = new Point(4, 231);
             label2.Name = "label2";
             label2.Size = new Size(135, 23);
-            label2.TabIndex = 19;
+            label2.TabIndex = 12;
             label2.Text = "保存ファイル名(OBS連携)";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -214,7 +214,7 @@
             label1.Location = new Point(4, 203);
             label1.Name = "label1";
             label1.Size = new Size(135, 23);
-            label1.TabIndex = 18;
+            label1.TabIndex = 9;
             label1.Text = "カメラID";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -224,7 +224,7 @@
             cboVideoCapture2.Location = new Point(401, 203);
             cboVideoCapture2.Name = "cboVideoCapture2";
             cboVideoCapture2.Size = new Size(135, 23);
-            cboVideoCapture2.TabIndex = 17;
+            cboVideoCapture2.TabIndex = 11;
             cboVideoCapture2.SelectionChangeCommitted += cboVideoCapture2_SelectedIndexChanged;
             // 
             // cboVideoCapture1
@@ -233,7 +233,7 @@
             cboVideoCapture1.Location = new Point(154, 202);
             cboVideoCapture1.Name = "cboVideoCapture1";
             cboVideoCapture1.Size = new Size(135, 23);
-            cboVideoCapture1.TabIndex = 16;
+            cboVideoCapture1.TabIndex = 10;
             cboVideoCapture1.SelectionChangeCommitted += cboVideoCapture1_SelectedIndexChanged;
             // 
             // btnSave2
@@ -245,7 +245,7 @@
             btnSave2.Location = new Point(538, 233);
             btnSave2.Name = "btnSave2";
             btnSave2.Size = new Size(49, 24);
-            btnSave2.TabIndex = 15;
+            btnSave2.TabIndex = 16;
             btnSave2.Text = "参照";
             btnSave2.UseVisualStyleBackColor = false;
             btnSave2.Click += btnSave2_Click;
@@ -259,7 +259,7 @@
             btnSave1.Location = new Point(291, 232);
             btnSave1.Name = "btnSave1";
             btnSave1.Size = new Size(49, 24);
-            btnSave1.TabIndex = 10;
+            btnSave1.TabIndex = 14;
             btnSave1.Text = "参照";
             btnSave1.UseVisualStyleBackColor = false;
             btnSave1.Click += btnSave1_Click;
@@ -269,7 +269,7 @@
             txtFileSavePath2.Location = new Point(401, 233);
             txtFileSavePath2.Name = "txtFileSavePath2";
             txtFileSavePath2.Size = new Size(131, 23);
-            txtFileSavePath2.TabIndex = 14;
+            txtFileSavePath2.TabIndex = 15;
             // 
             // txtFileSavePath1
             // 
@@ -329,119 +329,119 @@
             pnlAdvanced.Location = new Point(8, 307);
             pnlAdvanced.Name = "pnlAdvanced";
             pnlAdvanced.Size = new Size(627, 268);
-            pnlAdvanced.TabIndex = 11;
+            pnlAdvanced.TabIndex = 2;
             // 
             // label16
             // 
-            label16.Location = new Point(346, 48);
+            label16.Location = new Point(355, 84);
             label16.Name = "label16";
             label16.Size = new Size(255, 23);
-            label16.TabIndex = 43;
+            label16.TabIndex = 7;
             label16.Text = "※大きいほど精度高い、低すぎると誤認定多い";
             label16.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtFaceScore
             // 
-            txtFaceScore.Location = new Point(209, 49);
+            txtFaceScore.Location = new Point(218, 85);
             txtFaceScore.Name = "txtFaceScore";
             txtFaceScore.Size = new Size(131, 23);
-            txtFaceScore.TabIndex = 42;
+            txtFaceScore.TabIndex = 6;
             txtFaceScore.TextAlign = HorizontalAlignment.Center;
             // 
             // label17
             // 
-            label17.Location = new Point(0, 49);
+            label17.Location = new Point(4, 85);
             label17.Name = "label17";
-            label17.Size = new Size(203, 23);
-            label17.TabIndex = 41;
-            label17.Text = "顔認識判定(最大1)";
+            label17.Size = new Size(208, 23);
+            label17.TabIndex = 5;
+            label17.Text = "顔と認定する精度(最大1)";
             label17.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
-            label15.Location = new Point(406, 206);
+            label15.Location = new Point(415, 206);
             label15.Name = "label15";
             label15.Size = new Size(195, 23);
-            label15.TabIndex = 40;
+            label15.TabIndex = 22;
             label15.Text = "※カメラの画像サイズはOBSで確認";
             label15.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label14
             // 
-            label14.Location = new Point(295, 205);
+            label14.Location = new Point(304, 205);
             label14.Name = "label14";
             label14.Size = new Size(14, 23);
-            label14.TabIndex = 39;
+            label14.TabIndex = 20;
             label14.Text = "×";
             label14.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtFrameHeight
             // 
-            txtFrameHeight.Location = new Point(320, 206);
+            txtFrameHeight.Location = new Point(329, 206);
             txtFrameHeight.Name = "txtFrameHeight";
             txtFrameHeight.Size = new Size(75, 23);
-            txtFrameHeight.TabIndex = 38;
+            txtFrameHeight.TabIndex = 21;
             txtFrameHeight.TextAlign = HorizontalAlignment.Center;
             // 
             // txtFrameWidth
             // 
-            txtFrameWidth.Location = new Point(209, 205);
+            txtFrameWidth.Location = new Point(218, 205);
             txtFrameWidth.Name = "txtFrameWidth";
             txtFrameWidth.Size = new Size(76, 23);
-            txtFrameWidth.TabIndex = 37;
+            txtFrameWidth.TabIndex = 19;
             txtFrameWidth.TextAlign = HorizontalAlignment.Center;
             // 
             // label13
             // 
-            label13.Location = new Point(0, 205);
+            label13.Location = new Point(4, 205);
             label13.Name = "label13";
-            label13.Size = new Size(203, 23);
-            label13.TabIndex = 36;
+            label13.Size = new Size(208, 23);
+            label13.TabIndex = 18;
             label13.Text = "画像サイズ(幅×高)　デフォルト0(自動)";
             label13.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
-            label9.Location = new Point(346, 80);
+            label9.Location = new Point(355, 54);
             label9.Name = "label9";
             label9.Size = new Size(255, 23);
-            label9.TabIndex = 35;
+            label9.TabIndex = 4;
             label9.Text = "※大きいほど精度高い、低すぎると誤認定多い";
             label9.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtJudgementScore
             // 
-            txtJudgementScore.Location = new Point(209, 81);
+            txtJudgementScore.Location = new Point(218, 55);
             txtJudgementScore.Name = "txtJudgementScore";
             txtJudgementScore.Size = new Size(131, 23);
-            txtJudgementScore.TabIndex = 34;
+            txtJudgementScore.TabIndex = 3;
             txtJudgementScore.TextAlign = HorizontalAlignment.Center;
             // 
             // label12
             // 
-            label12.Location = new Point(0, 81);
+            label12.Location = new Point(4, 55);
             label12.Name = "label12";
-            label12.Size = new Size(203, 23);
-            label12.TabIndex = 33;
+            label12.Size = new Size(208, 23);
+            label12.TabIndex = 2;
             label12.Text = "同一プレイヤー判定割合(最大1)";
             label12.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // chkDevelopMode
             // 
             chkDevelopMode.AutoSize = true;
-            chkDevelopMode.Location = new Point(213, 240);
+            chkDevelopMode.Location = new Point(222, 240);
             chkDevelopMode.Name = "chkDevelopMode";
             chkDevelopMode.Size = new Size(15, 14);
-            chkDevelopMode.TabIndex = 32;
+            chkDevelopMode.TabIndex = 24;
             chkDevelopMode.UseVisualStyleBackColor = true;
             chkDevelopMode.CheckedChanged += chkDevelopMode_CheckedChanged;
             // 
             // label8
             // 
-            label8.Location = new Point(4, 237);
+            label8.Location = new Point(3, 235);
             label8.Name = "label8";
-            label8.Size = new Size(203, 23);
-            label8.TabIndex = 31;
+            label8.Size = new Size(209, 23);
+            label8.TabIndex = 23;
             label8.Text = "開発者用(デバッグモード)";
             label8.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -451,106 +451,106 @@
             btnJoinPlayerFileFullPath.FlatAppearance.BorderSize = 0;
             btnJoinPlayerFileFullPath.FlatStyle = FlatStyle.Flat;
             btnJoinPlayerFileFullPath.ForeColor = Color.White;
-            btnJoinPlayerFileFullPath.Location = new Point(346, 174);
+            btnJoinPlayerFileFullPath.Location = new Point(355, 174);
             btnJoinPlayerFileFullPath.Name = "btnJoinPlayerFileFullPath";
             btnJoinPlayerFileFullPath.Size = new Size(49, 24);
-            btnJoinPlayerFileFullPath.TabIndex = 30;
+            btnJoinPlayerFileFullPath.TabIndex = 15;
             btnJoinPlayerFileFullPath.Text = "参照";
             btnJoinPlayerFileFullPath.UseVisualStyleBackColor = false;
             btnJoinPlayerFileFullPath.Click += btnJoinPlayerFileFullPath_Click;
             // 
             // txtJoinPlayerSplitChar
             // 
-            txtJoinPlayerSplitChar.Location = new Point(538, 174);
+            txtJoinPlayerSplitChar.Location = new Point(547, 174);
             txtJoinPlayerSplitChar.Name = "txtJoinPlayerSplitChar";
             txtJoinPlayerSplitChar.Size = new Size(49, 23);
-            txtJoinPlayerSplitChar.TabIndex = 29;
+            txtJoinPlayerSplitChar.TabIndex = 17;
             txtJoinPlayerSplitChar.TextAlign = HorizontalAlignment.Center;
             // 
             // label11
             // 
-            label11.Location = new Point(406, 175);
+            label11.Location = new Point(415, 175);
             label11.Name = "label11";
             label11.Size = new Size(130, 23);
-            label11.TabIndex = 28;
+            label11.TabIndex = 16;
             label11.Text = "区切り文字(空欄は改行)";
             label11.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtJoinPlayerFileFullPath
             // 
-            txtJoinPlayerFileFullPath.Location = new Point(209, 176);
+            txtJoinPlayerFileFullPath.Location = new Point(218, 176);
             txtJoinPlayerFileFullPath.Name = "txtJoinPlayerFileFullPath";
             txtJoinPlayerFileFullPath.Size = new Size(131, 23);
-            txtJoinPlayerFileFullPath.TabIndex = 27;
+            txtJoinPlayerFileFullPath.TabIndex = 14;
             txtJoinPlayerFileFullPath.TextAlign = HorizontalAlignment.Center;
             // 
             // label10
             // 
-            label10.Location = new Point(0, 176);
+            label10.Location = new Point(4, 176);
             label10.Name = "label10";
-            label10.Size = new Size(203, 23);
-            label10.TabIndex = 26;
+            label10.Size = new Size(208, 23);
+            label10.TabIndex = 13;
             label10.Text = "参加プレイヤーの一覧ファイルを作成";
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtNewPlayerName
             // 
-            txtNewPlayerName.Location = new Point(209, 147);
+            txtNewPlayerName.Location = new Point(218, 147);
             txtNewPlayerName.Name = "txtNewPlayerName";
             txtNewPlayerName.Size = new Size(131, 23);
-            txtNewPlayerName.TabIndex = 25;
+            txtNewPlayerName.TabIndex = 12;
             txtNewPlayerName.TextAlign = HorizontalAlignment.Center;
             // 
             // label7
             // 
-            label7.Location = new Point(0, 147);
+            label7.Location = new Point(4, 147);
             label7.Name = "label7";
-            label7.Size = new Size(203, 23);
-            label7.TabIndex = 24;
-            label7.Text = "新規Player名(新規時に表示する名前)";
+            label7.Size = new Size(208, 23);
+            label7.TabIndex = 11;
+            label7.Text = "新規プレイヤー名(新規時に表示する名前)";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            label6.Location = new Point(346, 113);
+            label6.Location = new Point(355, 113);
             label6.Name = "label6";
             label6.Size = new Size(162, 23);
-            label6.TabIndex = 23;
+            label6.TabIndex = 10;
             label6.Text = "※こちら未満の割合は無視する";
             label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtExclusionRate
             // 
-            txtExclusionRate.Location = new Point(209, 114);
+            txtExclusionRate.Location = new Point(218, 114);
             txtExclusionRate.Name = "txtExclusionRate";
             txtExclusionRate.Size = new Size(131, 23);
-            txtExclusionRate.TabIndex = 22;
+            txtExclusionRate.TabIndex = 9;
             txtExclusionRate.TextAlign = HorizontalAlignment.Center;
             // 
             // label5
             // 
-            label5.Location = new Point(0, 114);
+            label5.Location = new Point(4, 114);
             label5.Name = "label5";
-            label5.Size = new Size(203, 23);
-            label5.TabIndex = 21;
+            label5.Size = new Size(208, 23);
+            label5.TabIndex = 8;
             label5.Text = "顔認識割合(最大1)";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtTimerInterval
             // 
-            txtTimerInterval.Location = new Point(209, 21);
+            txtTimerInterval.Location = new Point(218, 21);
             txtTimerInterval.Name = "txtTimerInterval";
             txtTimerInterval.Size = new Size(131, 23);
-            txtTimerInterval.TabIndex = 20;
+            txtTimerInterval.TabIndex = 1;
             txtTimerInterval.TextAlign = HorizontalAlignment.Center;
             txtTimerInterval.TextChanged += txtTimerInterval_TextChanged;
             // 
             // label4
             // 
-            label4.Location = new Point(0, 21);
+            label4.Location = new Point(4, 21);
             label4.Name = "label4";
-            label4.Size = new Size(203, 23);
-            label4.TabIndex = 19;
+            label4.Size = new Size(208, 23);
+            label4.TabIndex = 0;
             label4.Text = "プレイヤーを確認する間隔(秒)";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -563,8 +563,8 @@
             btnAdvanced.Location = new Point(8, 276);
             btnAdvanced.Name = "btnAdvanced";
             btnAdvanced.Size = new Size(111, 24);
-            btnAdvanced.TabIndex = 25;
-            btnAdvanced.Text = "登録";
+            btnAdvanced.TabIndex = 1;
+            btnAdvanced.Text = "高度な設定";
             btnAdvanced.UseVisualStyleBackColor = false;
             btnAdvanced.Click += btnAdvanced_Click;
             // 

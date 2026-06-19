@@ -86,13 +86,21 @@ public static class FacialRecognition
 
             cam.Read(frame);
 
-            // ノイズ除去
-            Cv2.FastNlMeansDenoisingColored(frame, frame, 3, 3, 7, 21);
+            try
+            {
+                // ノイズ除去
+                Cv2.FastNlMeansDenoisingColored(frame, frame, 3, 3, 7, 21);
 
-            // シャープ化
-            Mat blurred = new Mat();
-            Cv2.GaussianBlur(frame, blurred, new OpenCvSharp.Size(0, 0), 3);
-            Cv2.AddWeighted(frame, 1.5, blurred, -0.5, 0, frame);
+                // シャープ化
+                Mat blurred = new Mat();
+                Cv2.GaussianBlur(frame, blurred, new OpenCvSharp.Size(0, 0), 3);
+                Cv2.AddWeighted(frame, 1.5, blurred, -0.5, 0, frame);
+
+            }
+            catch
+            {
+                return returnNull;
+            }
         }
 
         var faceDetector = FaceDetectorYN.Create(
@@ -160,7 +168,11 @@ public static class FacialRecognition
                             var jpgFileName = Path.Combine(Utility.GetTempFolder(), developFileName + ".jpg") ?? "";
                             if (Path.Exists(jpgFileName) == false)
                             {
-                                Cv2.ImWrite(jpgFileName, frame);
+                                try
+                                {
+                                    Cv2.ImWrite(jpgFileName, frame);
+                                }
+                                catch { }
                             }
                             var jsonFileName = Path.Combine(Utility.GetTempFolder(), developFileName + ".json") ?? "";
 

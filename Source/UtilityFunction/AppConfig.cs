@@ -65,7 +65,7 @@ public class AppConfig : INotifyPropertyChanged
     private decimal _faceScore = (decimal)0.9;
 
     /// <summary>
-    /// 顔認識のスコア
+    /// 顔と認定する精度（顔認識のスコア）
     /// </summary>
     public decimal FaceScore
     {
